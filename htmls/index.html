@@ -10,14 +10,29 @@
 </head>
 
 <body>
-    <div class="main">
-        <div class="chat-history" id="chat-history">
+    <div class="main-main">
+        <div class="main">
+            <div class="chat-history" id="chat-history">
+                
+            </div>
+            <div class="prompt-field">
+                <input type="text" class="text-field" id="user-input" placeholder="Type your message..." />
+                <button class="submit-btn" onclick="sendMessage()">↑</button>
+            </div>
+        </div>
+
+        <div class="top-main">
+            <div class="chatbot-details">
+                <img src="https://pm1.aminoapps.com/7617/2da69fbb1ee8bfce33eaeef1c85141f76996626dr1-1000-1000v2_uhq.jpg" class="chatbot-image">
+                <h3 class="chatbot-name">Bubble Bot</h3>
+            </div>
+        </div>
+    </div>
+    <div class="left-main">
+        <h1 class="left-main-title"s>Chats</h1>
+        <aside class="old-chat-history">
             
-        </div>
-        <div class="prompt-field">
-            <input type="text" class="text-field" id="user-input" placeholder="Type your message..." />
-            <button class="submit-btn" onclick="sendMessage()">Send</button>
-        </div>
+        </aside>
     </div>
 </body>
 
