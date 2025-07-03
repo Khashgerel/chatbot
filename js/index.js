@@ -28,4 +28,24 @@ async function sendMessage() {
   } catch (err) {
     console.error("Error:", err);
   }
+  let userQuestions = []; 
+  input.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    const userMessage = input.value.trim();
+    if (userMessage) {
+      addMessage('user', userMessage);
+
+      // ✅ Save question
+      userQuestions.push(userMessage);
+      saveQuestions();  // Save to localStorage
+
+      input.value = '';
+
+      // Simulate bot response
+      setTimeout(() => {
+        addMessage('bot', `You said: ${userMessage}`);
+      }, 500);
+    }
+  }
+});
 }

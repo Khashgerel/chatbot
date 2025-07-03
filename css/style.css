@@ -42,6 +42,8 @@ body {
     word-wrap: break-word;
     font-size: 14px;
     color: white;
+    
+    
 }
 
 .chat-bubble.user {
@@ -175,5 +177,5 @@ body {
 .main-main {
     background-image: url('https://i.pinimg.com/236x/50/ac/e5/50ace556e8f1e0c422f59ec1863593dc.jpg');
 }
- 
+
  
