@@ -22,7 +22,7 @@ app.post("/chat", async (req, res) => {
   try {
     const response = await client.chat.completions.create({
       messages: [
-        { role: "system", content: "You are a helpful and sarcastic assistant." },
+        { role: "system", content: "You are a helpful and assistant." },
         { role: "user", content: userMessage }
       ],
       temperature: 1.0,

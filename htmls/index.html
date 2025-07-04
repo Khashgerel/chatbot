@@ -13,10 +13,10 @@
     <div class="main-main">
         <div class="main">
             <div class="chat-history" id="chat-history">
-                
+
             </div>
             <div class="prompt-field">
-                <input type="text" class="text-field" id="user-input" placeholder="Type your message..." />
+                <input type="text" class="text-field" id="user-input" placeholder="Type your message..." keydown/>
                 <button class="submit-btn" onclick="sendMessage()">↑</button>
             </div>
         </div>
@@ -29,8 +29,10 @@
         </div>
     </div>
     <div class="left-main">
-        <h1 class="left-main-title"s>Chats</h1>
+        <h1 class="left-main-title"s>Chat Logs</h1>
+        <div id="conversation-history" class="conversationHistory">
             
+        </div>
     </div>
 </body>
 
